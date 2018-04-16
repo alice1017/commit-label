@@ -4,7 +4,7 @@
 
 ## :page_facing_up: Overview
 
-The **commit-label** is the **git hook** to put a label beginning of the commit message.
+The **commit-label** install the git **prepare-commit-msg** hook to put a label beginning of the commit message.
 
 ## :scroll: List of the Labels
 
@@ -22,22 +22,22 @@ The **commit-label** is the **git hook** to put a label beginning of the commit 
 
 ```
 $ commit-label init
-Installed pre-commit hook.
+done.
 ```
 
 ### 2. Commit
 
 ```
 $ git commit -m "README.md"
-<<<< Commit Label >>>>
-Select Label:
-> WROTE - Use when wrote the document such as `README`.
-  FIXED - Use when fixed the bugs or issues.
-  IMPLEMENTED - Use when added the new feature.
-  ENHANCED - Use when implemented feature enhanced.
-  TESTED - Use when wrote the unit test.
-  ELEASED - Use when released to the product.
-  DO NOT PUT A LABEL
+Select Commit Label
+1) WROTE - Use when wrote the document such as `README`.
+2) FIXED - Use when fixed the bugs or issues.
+3) IMPLEMENTED - Use when added the new feature.
+4) ENHANCED - Use when implemented feature enhanced.
+5) TESTED - Use when wrote the unit test.
+6) ELEASED - Use when released to the product.
+7) DO NOT PUT A LABEL
+> 1
 [master (root-commit) 311f3b4] WROTE: README.md
  1 file changed, 1 insertion(+)
   create mode 100644 README.md
