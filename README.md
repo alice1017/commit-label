@@ -14,7 +14,7 @@ The **commit-label** install the git **prepare-commit-msg** hook to put a label 
 * **IMPLEMENTED** - Use when added the new feature.
 * **ENHANCED** - Use when implemented feature enhanced.
 * **TESTED** - Use when wrote the unit test.
-* **ELEASED** - Use when released to the product.
+* **RELEASED** - Use when released to the product.
 
 ## :wrench: Usage
 
