@@ -15,6 +15,7 @@ labels = [
     "ENHANCED",
     "TESTED",
     "ELEASED",
+    "DO NOT PUT A LABEL"
 ]
 
 label_choice = [
@@ -24,6 +25,7 @@ label_choice = [
     "ENHANCED - Use when implemented feature enhanced.",
     "TESTED - Use when wrote the unit test.",
     "ELEASED - Use when released to the product.",
+    "DO NOT PUT A LABEL"
 ]
 
 banner = "Select Commit Label "
@@ -69,6 +71,9 @@ def main():
 
     result = intify(raw_input("> "))
     selected_label = labels[result - 1]
+
+    if selected_label == labels[-1]:
+        sys.exit(0)
 
     labeled_msg = make_msg(selected_label)
 
