@@ -1,0 +1,83 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+import sys
+import readline
+
+sys.stdin = open("/dev/tty")
+
+msg_file = sys.argv[1]
+
+labels = [
+    "WROTE",
+    "FIXED",
+    "IMPLEMENTED",
+    "ENHANCED",
+    "TESTED",
+    "ELEASED",
+]
+
+label_choice = [
+    "WROTE - Use when wrote the document such as `README`.",
+    "FIXED - Use when fixed the bugs or issues.",
+    "IMPLEMENTED - Use when added the new feature.",
+    "ENHANCED - Use when implemented feature enhanced.",
+    "TESTED - Use when wrote the unit test.",
+    "ELEASED - Use when released to the product.",
+]
+
+banner = "Select Commit Label "
+
+
+def get_commit_msg(msg_file):
+
+    with open(msg_file, "r") as fp:
+        return fp.read()
+
+
+def intify(string):
+
+    try:
+        return int(string)
+
+    except ValueError:
+        sys.stderr.write("ValueError: Please input number!")
+        sys.exit(1)
+
+
+def make_msg(label):
+
+    label_msg = "{0}:".format(label)
+    msg = get_commit_msg(msg_file)
+    new_msg = ""
+
+    if msg.upper().startswith(label):
+        new_msg = msg.replace(label.lower(), label_msg)
+
+    else:
+        new_msg = "{0} {1}".format(label_msg, msg)
+
+    return new_msg
+
+
+def main():
+
+    print banner
+
+    for index, choice in enumerate(label_choice, start=1):
+        print "{0}) {1}".format(index, choice)
+
+    result = intify(raw_input("> "))
+    selected_label = labels[result - 1]
+
+    labeled_msg = make_msg(selected_label)
+
+    with open(msg_file, "w") as fp:
+        fp.write(labeled_msg)
+
+    sys.exit(0)
+
+
+if __name__ == '__main__':
+
+    main()
