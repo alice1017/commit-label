@@ -14,17 +14,17 @@ labels = [
     "IMPLEMENTED",
     "ENHANCED",
     "TESTED",
-    "ELEASED",
+    "RELEASED",
     "DO NOT PUT A LABEL"
 ]
 
 label_choice = [
-    "WROTE - Use when wrote the document such as `README`.",
-    "FIXED - Use when fixed the bugs or issues.",
+    "WROTE       - Use when wrote the document such as `README`.",
+    "FIXED       - Use when fixed the bugs or issues.",
     "IMPLEMENTED - Use when added the new feature.",
-    "ENHANCED - Use when implemented feature enhanced.",
-    "TESTED - Use when wrote the unit test.",
-    "ELEASED - Use when released to the product.",
+    "ENHANCED    - Use when implemented feature enhanced.",
+    "TESTED      - Use when wrote the unit test.",
+    "RELEASED    - Use when released to the product.",
     "DO NOT PUT A LABEL"
 ]
 

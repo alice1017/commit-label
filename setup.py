@@ -2,7 +2,7 @@
 # coding: utf-8
 
 from setuptools import setup, find_packages
-from command_label import __author__, __version__
+from commit_label import __author__, __version__
 
 with open("requirements.txt", "r") as fp:
     requires = fp.read().strip().split("\n")
