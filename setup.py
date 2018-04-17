@@ -17,6 +17,9 @@ setup(
     version=__version__,
     license="MIT License",
     packages=find_packages(),
+    data_files=[
+        ("hook", ["hook/prepare-commit-msg"])
+    ],
     install_requires=requires,
     entry_points={
         "console_scripts": [
