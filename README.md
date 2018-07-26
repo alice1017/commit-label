@@ -13,8 +13,14 @@ The **commit-label** install the git **prepare-commit-msg** hook to put a label 
 * **FIXED** - Use when fixed the bugs or issues.
 * **IMPLEMENTED** - Use when added the new feature.
 * **ENHANCED** - Use when implemented feature enhanced.
+* **MODIFIED** - Use when not enhanced but modified something.
 * **TESTED** - Use when wrote the unit test.
 * **RELEASED** - Use when released to the product.
+
+### Changelog
+
+* *2018/7/26* - Added the '**MODIFIED**' label.
+
 
 ## :wrench: Usage
 
@@ -34,9 +40,10 @@ Select Commit Label
 2) FIXED - Use when fixed the bugs or issues.
 3) IMPLEMENTED - Use when added the new feature.
 4) ENHANCED - Use when implemented feature enhanced.
-5) TESTED - Use when wrote the unit test.
-6) RELEASED - Use when released to the product.
-7) DO NOT PUT A LABEL
+5) MODIFIED    - Use when not enhanced but modified something.
+6) TESTED - Use when wrote the unit test.
+7) RELEASED - Use when released to the product.
+8) DO NOT PUT A LABEL
 > 1
 [master (root-commit) 311f3b4] WROTE: README.md
  1 file changed, 1 insertion(+)
