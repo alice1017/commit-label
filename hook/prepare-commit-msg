@@ -24,7 +24,7 @@ label_choice = [
     "FIXED       - Use when fixed the bugs or issues.",
     "IMPLEMENTED - Use when added the new feature.",
     "ENHANCED    - Use when implemented feature enhanced.",
-    "MODIFIED    - Use when not enhanced but modified something."
+    "MODIFIED    - Use when not enhanced but modified something.",
     "TESTED      - Use when wrote the unit test.",
     "RELEASED    - Use when released to the product.",
     "DO NOT PUT A LABEL"
